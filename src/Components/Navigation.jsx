@@ -7,14 +7,14 @@ export default function Navigation() {
       <div className='kuang'>
         <ul className='nav'>
           <li>
-            <Link to="/home">农村复盘</Link>
+            转签云省分
           </li>
-          <li>
+          {/* <li>
             <Link to="/yanjie">沿街复盘</Link>
           </li>
           <li>
             <Link to="/pianqu">片区复盘</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 

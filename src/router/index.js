@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import App from '../App'
 
 const Home = React.lazy(() => import('../pages/Home'));
-const Yanjie = React.lazy(() => import('../pages/Yanjie'));
-const Pianqu = React.lazy(() => import('../pages/Pianqu'));
+
 
 const BaseRouter = () => (
 
@@ -13,8 +12,7 @@ const BaseRouter = () => (
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path='/' element={<App />}>
-          <Route path='/yanjie' element={<Yanjie />}></Route>
-          <Route path='/pianqu' element={<Pianqu />}></Route>
+
           <Route path='/home' element={<Home />}></Route>
 
         </Route>
